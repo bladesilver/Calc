@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+  background: url(../img/computer_911165_1920_18.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+}
+
+.calc {
+  width: 1072px;
+  height: 720px;
+  border: 2px solid #efae02;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  margin-top: 125px;
+}
+
+.tabs {
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabs .tab__left, .tabs .tab__right {
+  width: 200px;
+  height: 70px;
+  border-radius: 0px 15px 0px 0px;
+  background-image: linear-gradient(0deg, rgb(0, 0, 0) 10%, #323131 100%);
+  font-size: 18px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #cecece;
+  margin-right: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.tabs .tab__left {
+  border-radius: 15px 0px 0px 0px;
+}
+.tabs .active__tab {
+  background: #efae02;
+  color: #000;
+  position: relative;
+}
+.tabs .active__tab::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background-color: #efae02;
+  left: 0;
+  bottom: -8px;
+}
+
+.counter {
+  width: 132px;
+  height: 60px;
+  border: 3.2px solid rgba(239, 174, 2, 0.6);
+  background-color: transparent;
+  text-align: center;
+  color: #efae02;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+}
+
+.blocks {
+  width: 65%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blocks__title {
+  position: relative;
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.blocks__title::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #efae02;
+  bottom: 0;
+  left: 0;
+}
+
+#pages__block {
+  display: none;
+}
+
+.addiction {
+  font-size: 30px;
+  line-height: 72px;
+  font-weight: 700;
+  color: #efae02;
+}
+.addiction__title {
+  text-align: center;
+}
+.addiction__block {
+  text-align: left;
+}
+.addiction__block input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  outline: 1px solid #fff;
+}
+
+.total {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 36px;
+  line-height: 72px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.total__count {
+  width: 200px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  color: #efae02;
+  text-align: right;
+  font-size: 56px;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

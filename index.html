@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Calc</title>
+</head>
+<body>
+    <div class="calc">
+        <div class="tabs">
+            <div class="tab__left active__tab" >Лэндинг</div>
+            <div class="tab__right">Многостраничник</div>
+        </div>
+        <div class="blocks" id="blocks__block">
+            <div class="blocks__title">Количество блоков</div>
+            <input type="number" class="counter" id="counter-block">
+        </div>
+        <div class="blocks" id="pages__block">
+            <div class="blocks__title">Количество страниц</div>
+            <input type="number" class="counter" id="counter-pages">
+        </div>
+        <div class="blocks">
+            <div class="blocks__title">Сколько часов на проект</div>
+            <input type="number" class="counter" id="counter-hours">
+        </div>
+        <div class="blocks">
+            <div class="blocks__title">Стоимость часа</div>
+            <input type="number" class="counter" id="counter-rate">
+        </div>
+        <div class="addiction">
+            <div class="addiction__title">Дополнительно</div>
+            <div class="addiction__block">
+                <input type="checkbox" id="changes-check">
+                Возможность редактировать текст на сайте
+            </div>
+            <div class="addiction__block">
+                <input type="checkbox" id="changes-cms">
+                Установка на CMS
+            </div>
+        </div>
+        <div class="total">
+            Общая стоимость
+            <input value="5000" type="text" class="total__count" id="total__value">
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
